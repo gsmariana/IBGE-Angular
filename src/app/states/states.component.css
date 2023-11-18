@@ -1,0 +1,72 @@
+/* states.component.css */
+.region-container {
+  margin-bottom: 20px;
+}
+
+.region-container h2 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.state-item {
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-left: 5px solid #007bff; /* Um toque de cor para indicar uma região */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve para dar profundidade */
+  border-radius: 4px;
+}
+
+/* Estilizando o título da seção */
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Estilizando o seletor de estados */
+select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  appearance: none; /* Para remover estilos padrão específicos de alguns navegadores */
+}
+
+/* Remove a seta padrão do select no IE */
+select::-ms-expand {
+  display: none;
+}
+
+/* Estilizando a lista de cidades */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilizando cada cidade na lista */
+li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eaeaea;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #e7f4ff;
+}
+
+/* Removendo a borda do último item para um visual limpo */
+li:last-child {
+  border-bottom: none;
+}
+

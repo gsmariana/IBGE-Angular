@@ -1,0 +1,13 @@
+.region {
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-left: 5px solid #009688; /* Um toque de cor para indicar uma região */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve para dar profundidade */
+  border-radius: 4px;
+}
+.region h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2em;
+}

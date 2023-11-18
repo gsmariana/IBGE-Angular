@@ -1,0 +1,8 @@
+<!-- cities.component.html -->
+<select [(ngModel)]="uf" (change)="loadCities()">
+  <option value="">Selecione um Estado</option>
+  <option *ngFor="let state of states" [value]="state.sigla">{{ state.nome }}</option>
+</select>
+<ul *ngIf="cities.length > 0">
+  <li *ngFor="let city of cities">{{ city.nome }}</li>
+</ul>

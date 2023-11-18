@@ -1,0 +1,19 @@
+<!-- states.component.html -->
+<div *ngFor="let region of getRegionKeys()" class="region-container">
+  <h2>{{ region }}</h2>
+  <div *ngFor="let state of statesByRegion[region]" class="state-item" (click)="onStateSelected(state.sigla)">
+    {{ state.nome }} ({{ state.sigla }})
+  </div>
+</div>
+
+<h2>Cities by state</h2>
+<!-- Seletor de estados -->
+<select [(ngModel)]="selectedState" (change)="onStateSelected(selectedState)">
+  <option value="" disabled>Selecione um Estado</option>
+  <option *ngFor="let state of allStates" [ngValue]="state.sigla">{{ state.nome }}</option>
+</select>
+
+<!-- Lista de cidades do estado selecionado -->
+<ul *ngIf="cities.length > 0">
+  <li *ngFor="let city of cities">{{ city.nome }}</li>
+</ul>
