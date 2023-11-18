@@ -22,5 +22,7 @@ Before you begin, ensure you have met the following requirements:
 To install IBGE-Angular, follow these steps:
 
 git clone https://github.com/yourusername/IBGE-Angular.git
+
 cd IBGE-Angular
+
 npm install
